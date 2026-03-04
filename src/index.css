@@ -5,8 +5,50 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Premium dark aesthetic */
+    background-color: #09090b;
+    /* zinc-950 */
+    color: #fafafa;
+    /* zinc-50 */
   }
+
   body {
-    @apply bg-slate-50 text-slate-900 antialiased;
+    @apply antialiased overflow-x-hidden;
+  }
+
+  /* Custom minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-700;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-zinc-800 text-zinc-50;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-zinc-900/40 backdrop-blur-xl border border-zinc-800/50 shadow-2xl;
+  }
+
+  .glass-nav {
+    @apply bg-zinc-950/70 backdrop-blur-md border-b border-zinc-800/50;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-zinc-100 to-zinc-500;
   }
 }
