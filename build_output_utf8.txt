@@ -1,0 +1,203 @@
+﻿
+> portfolio-website@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+node.exe : Error: 
+Cannot apply 
+unknown utility 
+class 
+`bg-slate-50`. Are 
+you using CSS 
+modules or similar 
+and missing 
+`@reference`? https:
+//tailwindcss.com/do
+cs/functions-and-dir
+ectives#reference-di
+rective
+At line:1 char:1
++ & "C:\Program File
+s\nodejs/node.exe" "
+C:\Users\DELL\AppDat
+a\Roaming\n ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Erro   
+ r: Cannot a...r    
+ence-directive:    
+String) [], Rem    
+oteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+    at 
+onInvalidCandidate (
+C:\Users\DELL\Deskto
+p\projects\portfolio
+-website\node_module
+s\tailwindcss\dist\l
+ib.js:21:1314)
+    at Ee (C:\Users\
+DELL\Desktop\project
+s\portfolio-website\
+node_modules\tailwin
+dcss\dist\lib.js:16:
+37066)
+    at C:\Users\DELL
+\Desktop\projects\po
+rtfolio-website\node
+_modules\tailwindcss
+\dist\lib.js:21:355
+    at Pr (C:\Users\
+DELL\Desktop\project
+s\portfolio-website\
+node_modules\tailwin
+dcss\dist\lib.js:3:1
+733)
+    at _ (C:\Users\D
+ELL\Desktop\projects
+\portfolio-website\n
+ode_modules\tailwind
+css\dist\lib.js:3:13
+77)
+    at Te (C:\Users\
+DELL\Desktop\project
+s\portfolio-website\
+node_modules\tailwin
+dcss\dist\lib.js:21:
+172)
+    at pn (C:\Users\
+DELL\Desktop\project
+s\portfolio-website\
+node_modules\tailwin
+dcss\dist\lib.js:38:
+294)
+    at async dn (C:\
+Users\DELL\Desktop\p
+rojects\portfolio-we
+bsite\node_modules\t
+ailwindcss\dist\lib.
+js:38:631)
+    at async Xr (C:\
+Users\DELL\Desktop\p
+rojects\portfolio-we
+bsite\node_modules\@
+tailwindcss\node\dis
+t\index.js:10:3417)
+    at async N (C:\U
+sers\DELL\Desktop\pr
+ojects\portfolio-web
+site\node_modules\@t
+ailwindcss\postcss\d
+ist\index.js:10:3979
+)
+[32m✓[39m 3 modules transformed.
+[31m✗[39m Build 
+failed in 259ms
+[31merror during 
+build:
+[31m[vite:css] 
+[postcss] 
+tailwindcss: C:/User
+s/DELL/Desktop/proje
+cts/portfolio-websit
+e/src/index.css:1:1:
+ Cannot apply 
+unknown utility 
+class 
+`bg-slate-50`. Are 
+you using CSS 
+modules or similar 
+and missing 
+`@reference`? https:
+//tailwindcss.com/do
+cs/functions-and-dir
+ectives#reference-di
+rective[31m
+file: [36mC:/Users/
+DELL/Desktop/project
+s/portfolio-website/
+src/index.css:1:0[3
+1m
+    at Input.error (
+C:\Users\DELL\Deskto
+p\projects\portfolio
+-website\node_module
+s\postcss\lib\input.
+js:135:16)
+    at Root.error (C
+:\Users\DELL\Desktop
+\projects\portfolio-
+website\node_modules
+\postcss\lib\node.js
+:146:32)
+    at Object.Once (
+C:\Users\DELL\Deskto
+p\projects\portfolio
+-website\node_module
+s\@tailwindcss\postc
+ss\dist\index.js:10:
+6913)
+    at async 
+LazyResult.runAsync 
+(C:\Users\DELL\Deskt
+op\projects\portfoli
+o-website\node_modul
+es\postcss\lib\lazy-
+result.js:293:11)
+    at async 
+runPostCSS (file:///
+C:/Users/DELL/Deskto
+p/projects/portfolio
+-website/node_module
+s/vite/dist/node/chu
+nks/config.js:30145:
+19)
+    at async 
+compilePostCSS (file
+:///C:/Users/DELL/De
+sktop/projects/portf
+olio-website/node_mo
+dules/vite/dist/node
+/chunks/config.js:30
+129:6)
+    at async 
+compileCSS (file:///
+C:/Users/DELL/Deskto
+p/projects/portfolio
+-website/node_module
+s/vite/dist/node/chu
+nks/config.js:30059:
+26)
+    at async 
+Object.handler (file
+:///C:/Users/DELL/De
+sktop/projects/portf
+olio-website/node_mo
+dules/vite/dist/node
+/chunks/config.js:29
+592:54)
+    at async 
+transform (file:///C
+:/Users/DELL/Desktop
+/projects/portfolio-
+website/node_modules
+/rollup/dist/es/shar
+ed/node-entry.js:212
+69:16)
+    at async ModuleL
+oader.addModuleSourc
+e (file:///C:/Users/
+DELL/Desktop/project
+s/portfolio-website/
+node_modules/rollup/
+dist/es/shared/node-
+entry.js:21497:36)[
+39m
