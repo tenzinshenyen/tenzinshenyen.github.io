@@ -17,20 +17,13 @@ export default function About() {
 
                     <div className="space-y-8 text-2xl md:text-3xl font-medium tracking-tight text-zinc-300 leading-[1.4]">
                         <p>
-                            An AI & ML-focused engineer with over 4 years of experience architecting
-                            document understanding, natural language, and enterprise
-                            search solutions.
+                            I am an engineer focused on artificial intelligence and machine learning with over 4 years of experience building document understanding, natural language, and enterprise search solutions.
                         </p>
                         <p className="text-zinc-500">
-                            My expertise is rooted at the intersection of applied machine learning and resilient cloud
-                            infrastructure. I specialize in designing massive-scale document retrieval and
-                            extraction pipelines—leveraging AWS Textract and Transformer-based
-                            LLMs (Azure OpenAI) to classify, summarize, and extract actionable intelligence.
+                            My work lives at the intersection of applied machine learning and resilient cloud infrastructure. I design massive-scale document retrieval and extraction pipelines. By leveraging tools like AWS Textract and Transformer-based LLMs through Azure OpenAI, I help systems intelligently classify, summarize, and extract actionable data.
                         </p>
                         <p className="text-zinc-600 text-xl pt-4">
-                            Beyond applied AI, I possess deep experience in cloud architecture and data engineering.
-                            From orchestrating multi-source ETL pipelines and conducting database migrations (PostgreSQL, MongoDB, Aurora)
-                            to deploying highly secure, custom enterprise search ecosystems via AWS Kendra.
+                            Beyond applied AI, I possess deep experience in foundational data engineering and cloud architecture. I have orchestrated multi-source ETL pipelines, conducted database migrations across PostgreSQL and MongoDB, and deployed highly secure enterprise search ecosystems using AWS Kendra.
                         </p>
                     </div>
                 </motion.div>

@@ -6,36 +6,43 @@ export default function Experience() {
             role: "Digital Transformation Analyst",
             company: "Ocwen Financial",
             dates: "May 2021 – Jun 2024",
-            description: [
-                "Architected a production call summarization and insights pipeline using AWS Transcribe and Azure OpenAI (Transformer LLMs), capturing sentiment/intent to vastly reduce manual review times.",
-                "Automated document information extraction via AWS Textract and LLMs, cutting processing time by 40% while improving key-field accuracy across large datasets.",
-                "Engineered an AI-assisted document classification and routing pipeline, increasing overall workflow throughput by 30%.",
-                "Enhanced enterprise document discovery by deploying AWS Kendra, enabling secure and rapid search over private repositories.",
-                "Benchmarked Aurora/Redshift at 4B+ rows for cloud migration proofs-of-concept, documenting critical performance trade-offs."
-            ]
+            summary: "Led the design and deployment of AI-driven automation pipelines and enterprise search solutions, significantly reducing operational overhead.",
+            achievements: [
+                "Built a production call summarization pipeline with AWS Transcribe and Azure OpenAI, accelerating manual review processes through automated sentiment and intent capture.",
+                "Automated document information extraction via AWS Textract and LLMs. This improved key-field accuracy and reduced processing time by 40%.",
+                "Engineered an AI-assisted document classification and routing system that increased overall workflow throughput by 30%.",
+                "Deployed AWS Kendra for secure, rapid enterprise document discovery across highly sensitive private repositories.",
+                "Benchmarked Aurora and Redshift at 4B+ rows to guide cloud migration strategy and mitigate architectural risks."
+            ],
+            techStack: ["Python", "AWS Textract", "AWS Kendra", "AWS Transcribe", "Azure OpenAI", "Redshift", "Node.js"]
         },
         {
             role: "Engineering Intern, Digital Transformation",
             company: "Ocwen Financial",
             dates: "Jun 2020 – May 2021",
-            description: [
-                "Built an automated log consolidation workflow in UiPath Studio, streamlining operational reporting with zero errors over five consecutive months.",
-                "Evaluated AWS Aurora and Redshift migration options, documenting technical recommendations to reduce cloud architectural risk."
-            ]
+            summary: "Developed automated operational workflows and conducted critical cloud migration evaluations.",
+            achievements: [
+                "Built an automated log consolidation workflow in UiPath Studio. This streamlined operational reporting and ran with zero errors over five consecutive months.",
+                "Evaluated AWS Aurora and Redshift migration paths, delivering technical recommendations to leadership to reduce architectural risk."
+            ],
+            techStack: ["UiPath Studio", "AWS Aurora", "AWS Redshift", "Python"]
         },
         {
             role: "Engineering Intern, Data Management",
             company: "Ocwen Financial",
             dates: "Jan 2020 – Jun 2020",
-            description: [
-                "Contributed to an Informatica-based ETL tool ingesting multi-source data into unified tables, reducing manual handling by 30% and improving reliability."
-            ]
+            summary: "Supported core data integration efforts across multi-source systems.",
+            achievements: [
+                "Contributed to an Informatica-based ETL tool that ingested multi-source data into unified tables.",
+                "Improved complex integration reliability and reduced manual data handling by 30%."
+            ],
+            techStack: ["Informatica", "SQL", "ETL", "Data Pipelines"]
         }
     ];
 
     return (
         <section id="experience" className="py-32 relative border-t border-zinc-900 bg-zinc-950">
-            <div className="max-w-4xl mx-auto px-6">
+            <div className="max-w-5xl mx-auto px-6">
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -48,7 +55,7 @@ export default function Experience() {
                     </h2>
                 </motion.div>
 
-                <div className="space-y-24">
+                <div className="space-y-12">
                     {experiences.map((exp, index) => (
                         <motion.div
                             key={index}
@@ -56,28 +63,45 @@ export default function Experience() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="grid md:grid-cols-4 gap-8 md:gap-12 group"
+                            className="relative grid md:grid-cols-4 gap-8 md:gap-12 p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 hover:bg-zinc-800/40 hover:border-zinc-700/60 transition-all group"
                         >
-                            <div className="md:col-span-1 text-zinc-500 mt-1 uppercase tracking-wider text-sm font-semibold">
-                                {exp.dates}
+                            <div className="md:col-span-1">
+                                <div className="text-zinc-500 uppercase tracking-wider text-sm font-semibold mb-2">
+                                    {exp.dates}
+                                </div>
                             </div>
 
                             <div className="md:col-span-3">
-                                <h3 className="text-2xl font-semibold text-zinc-100 mb-1 group-hover:text-white transition-colors">
+                                <h3 className="text-2xl font-bold text-zinc-100 mb-1 group-hover:text-white transition-colors">
                                     {exp.role}
                                 </h3>
-                                <div className="text-lg text-zinc-400 mb-6 font-medium">
+                                <div className="text-lg text-zinc-400 font-medium mb-6">
                                     {exp.company}
                                 </div>
 
-                                <ul className="space-y-4">
-                                    {exp.description.map((item, i) => (
-                                        <li key={i} className="flex gap-4 text-zinc-400 text-base leading-relaxed">
-                                            <span className="text-zinc-700 mt-2">—</span>
+                                <p className="text-zinc-300 text-base leading-relaxed mb-6 font-medium">
+                                    {exp.summary}
+                                </p>
+
+                                <ul className="space-y-4 mb-8">
+                                    {exp.achievements.map((item, i) => (
+                                        <li key={i} className="flex gap-4 text-zinc-400 text-sm md:text-base leading-relaxed">
+                                            <span className="text-zinc-600 mt-1 flex-shrink-0">✦</span>
                                             <span>{item}</span>
                                         </li>
                                     ))}
                                 </ul>
+
+                                <div className="flex flex-wrap gap-2">
+                                    {exp.techStack.map((tech, i) => (
+                                        <span
+                                            key={i}
+                                            className="px-3 py-1.5 text-xs font-semibold tracking-wide text-zinc-300 bg-zinc-800/50 border border-zinc-700/50 rounded-full"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </motion.div>
                     ))}

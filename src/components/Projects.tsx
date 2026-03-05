@@ -5,37 +5,37 @@ export default function Projects() {
     const projects = [
         {
             title: "OpenBodhi: Tibetan Document OCR + Multilingual RAG",
-            description: "End-to-end pipeline for Tibetan document understanding. Combines OCR cleaning, chunking, M3-style multilingual embeddings, vector search, and LLM-assisted answer generation.",
+            description: "An end-to-end pipeline specializing in Tibetan document understanding. Handles OCR cleaning, text chunking, and multilingual embeddings to power precise vector search and LLM-assisted answer generation.",
             techStack: ["Python", "OCR", "LLMs", "Vector Search", "RAG"],
             githubUrl: "https://github.com/tenzinshenyen/OpenBodhi",
         },
         {
-            title: "Enterprise Search Service (Powered by AWS Kendra)",
-            description: "A highly scalable backend search system integrating AWS Kendra for natural language query processing over large enterprise content. Secure, role-based, and serverless.",
+            title: "Enterprise Search Service Using AWS Kendra",
+            description: "A secure, serverless backend search system utilizing AWS Kendra to process natural language queries across large, private enterprise repositories.",
             techStack: ["AWS Kendra", "Node.js", "Python", "React", "CDK"],
             githubUrl: "https://github.com/tenzinshenyen/aws-kendra-enterprise-search",
         },
         {
             title: "IMDb Data Platform Migration",
-            description: "Migrated the massive IMDb dataset from PostgreSQL to MongoDB using a custom Python ETL pipeline. Redesigned schemas resulting in 3x faster analytical query workloads.",
+            description: "Executed a massive dataset relocation from PostgreSQL to MongoDB via a custom Python ETL pipeline. Redesigned schemas resulting in 3x faster analytical queries.",
             techStack: ["Python", "PostgreSQL", "MongoDB", "ETL"],
             githubUrl: "https://github.com/tenzinshenyen/imdb-data-analytics",
         },
         {
-            title: "Distributed Load Balancer for Cloud Microservices",
-            description: "Authored a Flask-based distributed load balancer routing text-processing workloads across concurrent AWS EC2 instances, leveraging real-time latency metrics for a 25% balance improvement.",
+            title: "Distributed Extensible Load Balancer",
+            description: "Engineered a Flask-based load balancer to route text-processing workloads across AWS EC2 instances, leveraging metrics for a 25% balance improvement.",
             techStack: ["Python", "Flask", "AWS EC2", "Distributed Systems"],
             githubUrl: "https://github.com/tenzinshenyen/prequal-load-balancer",
         },
         {
-            title: "Patch-Based Image Similarity (MatchNet vs. BEiT)",
-            description: "PyTorch pipeline applied to Tiny ImageNet comparing Siamese-style MatchNet against a Transformer-based BEiT backbone, fine-tuned for high-performance retrieval matching.",
+            title: "Patch-Based Image Similarity matching",
+            description: "Built a PyTorch pipeline on Tiny ImageNet comparing Siamese MatchNet architectures against a Transformer-based BEiT backbone for high-performance retrieval matching.",
             techStack: ["PyTorch", "HuggingFace", "Transformers", "Computer Vision"],
             githubUrl: "https://github.com/tenzinshenyen/patch-matching-deep-learning",
         },
         {
             title: "IoT Athletic Performance Monitor",
-            description: "Real-time analytics monitor interfacing robust IoT hardware with responsive dashboards to measure and aggregate physical output signals in real-time.",
+            description: "Developed a real-time analytics monitor interfacing IoT hardware with responsive dashboards to precisely measure and aggregate physical output signals.",
             techStack: ["IoT", "Hardware", "C++", "Analytics"],
             githubUrl: "https://github.com/tenzinshenyen/iot-athletic-monitor",
         }
